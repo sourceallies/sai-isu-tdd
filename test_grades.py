@@ -9,9 +9,9 @@ def test_get_grades_returns_single_number_for_student():
 
     assert isinstance(grades.get_grades(request), Number)
 
-def test_get_grades_returns_number_list_for_teacher():
+def test_get_grades_returns_number_list_for_professor():
     request = {
-        "type": "teacher"
+        "type": "professor"
     }
 
     assert isinstance(grades.get_grades(request), list)
