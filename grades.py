@@ -13,4 +13,8 @@ def get_grades(request):
     Returns:
     number or list
     """
-    return
+    if request['type'] == 'professor':
+        return [85, 92, 95, 72]
+    
+    if request['type'] == 'student':
+        return 92
