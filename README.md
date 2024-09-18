@@ -21,7 +21,7 @@ You are asked to add an additional role that must be handled. An **Admin** is so
 While [Challenge 1](#challenge-1---make-green-tests) and [Challenge 2](#challenge-2---add-admin-get-red-tests-make-green-tests) are good TDD practices, challenge 3 is going to be a bit more of a full on problem you have to solve. As you know, generally a student doesn't have just a single grade that is maintained, the system should have a grade for several homeworks, assignments, or tests with different weights. Say we have the following:
 
 ```python
-student_grade = [
+student_grade_example = [
     {
         "name": "Homework 1",
         "weight": 0.2,
@@ -45,12 +45,12 @@ student_grade = [
 ]
 ```
 
-What would be the expected grade for this individual? Approximately 81%. If this is the outcome we want, we can start breaking this into tests. These would be some basic, practical tests, but as the engineer, you would be expected to write up more yourself:
+What would be the expected grade for this individual? 80.8% (or you can get into rounding if you're extra intrigued). If this is the outcome we want, we can start breaking this into tests. These would be some basic, practical tests, but as the engineer, you would be expected to write up more yourself:
 
 ### Given:
 A single homework with 100% weight
 ```python
-student_grade = [
+student_grade_example = [
     {
         "name": "Homework 1",
         "weight": 1.0,
@@ -67,7 +67,7 @@ expected_grade == 90
 ### Given:
 Two homeworks with 50% weight each
 ```python
-student_grade = [
+student_grade_example = [
     {
         "name": "Homework 1",
         "weight": 0.5,
