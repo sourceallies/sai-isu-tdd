@@ -15,3 +15,10 @@ def test_get_grades_returns_number_list_for_professor():
     }
 
     assert isinstance(grades.get_grades(request), list)
+
+def test_get_grades_returns_number_list_for_admin():
+    request = {
+        "type": "admin"
+    }
+
+    assert isinstance(grades.get_grades(request), list)
